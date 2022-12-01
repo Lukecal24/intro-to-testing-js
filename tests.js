@@ -66,3 +66,39 @@ describe( "isFive", function() {
         expect(isFive("5")).toBe(true);
     });
 });
+
+
+//isEven
+    describe( "isEven", function() {
+        it('should be  defined function', function () {
+            expect(typeof isEven).toBe('function');
+        });
+
+});
+
+
+//isVowel
+describe( "isVowel", function() {
+    it('should be  defined function', function () {
+        expect(typeof isVowel).toBe('function');
+    });
+    it('should return true when passed "a"', function () {
+        expect(isVowel("a")).toBe(true);
+    });
+    it('should return false when passed "y"', function () {
+        expect(isVowel("y")).toBe(false);
+    });
+    it('should return false when passed 4', function () {
+        expect(isVowel(4)).toBe(false);
+    });
+    it('should return true when passed "A"', function () {
+        expect(isVowel("A")).toBe(true);
+    });
+    it('should return true when passed "e"', function () {
+        expect(isVowel("e")).toBe(true);
+    });
+    it('should return false if passed a boolean', function () {
+        expect(isVowel(true)).toBe(false);
+        expect(isVowel(false)).toBe(false);
+    });
+});
