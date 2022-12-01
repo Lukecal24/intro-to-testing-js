@@ -41,3 +41,25 @@ describe( "sayHello", function(){
         expect(sayHello(false)).toBe("Hello, World!");
     });
 });
+
+// isFive
+describe( "isFive", function() {
+    it('should be  defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean output', function () {
+        expect(typeof isFive()).toBe('boolean');
+    });
+    it('should return false when passed the number 4', function () {
+        expect(isFive(4)).toBe(false);
+    });
+    it('should return false when passed the number 6', function () {
+        expect(isFive(6)).toBe(false);
+    });
+    it('should return true when passed the number 5', function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return false when passed the number 2', function () {
+        expect(isFive(2)).toBe(false);
+    });
+});
