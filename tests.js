@@ -134,3 +134,13 @@ describe( "isVowel", function() {
         expect(isVowel()).toBe(false);
     });
 });
+
+//add
+describe( "add", function() {
+    it('should be  defined function', function () {
+        expect(typeof add).toBe('function');
+    });
+    it('should be return 5 when passed 2,3', function () {
+        expect(add(2,3)).toBe(5);
+    });
+});
