@@ -20,8 +20,16 @@ function isFive(input){
 
 
 //isEven
-function isEven(){
-
+function isEven(input){
+    return (input % 2 === 0 || parseInt(input) % 2 === 0) && input !== false;
 }
 
 //isVowel
+function isVowel(input){
+    if(typeof input ==="string"){
+        input = input.toLowerCase();
+        if('aeiou'.indexOf(input) !== -1)
+            return true;
+    }
+    return false;
+}
